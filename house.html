@@ -1,0 +1,23 @@
+<head>
+    <script src='house.js'></script>
+</head>
+<body>
+    <h1>House Custome Object</h1>
+    <script>
+        var myHouse=new House(4, 'colonial',1990, true)
+        document.write('my house has '+ myHouse.rooms + ' rooms')
+        document.write('My house style is ' + myHouse.style+ '.<br>')
+        document.write('my house was built in '+ myHouse.built +  '.,br>')
+        document.write(' my house has a garage: '+ myHouse.hasGarage)
+        document.write(" my house living space is " = myHouse.livingSpace(30,70,2)+ ' square feet.<br>');
+        myHouse.maintain();
+        var yourHouse = new House(3, 'spanish', 2003, false);
+        var yourHouse=new House(4, 'colonial',1990, true)
+        document.write('my house has '+ yourHouse.rooms + ' rooms')
+        document.write('My house style is ' + yourHouse.style+ '.<br>')
+        document.write('my house was built in '+ yourHouse.built +  '.,br>')
+        document.write(' my house has a garage: '+ yourHouse.hasGarage)
+        document.write(" my house living space is " = yourHouse.livingSpace(40,50,1)+ ' square feet.<br>');
+        yourHouse.maintain();
+</script>
+</body>

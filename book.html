@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Custom Object</title>
+</head>
+<body>
+    <h1>"Book Custom Object"></h1>
+    <script>
+        Bok.prototype.addTax = function addTax(){
+            var taxAdded = this.price*1.10 ; 
+            return (taxAdded.toFixed(2));
+        }
+        var famousBook = new Book('war and peace', 'leo tolstoy',30.00)
+        var myBook = new Book('Javascript by Example', 'ellie quigley',25);
+        document.write(famousBook.show()+'<br>')
+        document.write('with tax' = famousBook.title = 'costs '= famouseBook.addTax()+'.<br>')
+        document.write(myBook.show()+ '<br>')
+    </script>
+</body>
+</html>
